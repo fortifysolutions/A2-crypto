@@ -8,62 +8,40 @@ A generic & user-interactive automation tool that performs OWASP Top 10 – A02:
 
 The script asks the user for the target domain or full URL and automatically performs a comprehensive set of security tests related to transport-layer security, cookies, headers, mixed-content, token leakages, and more.
 
-🚀 Features
-
-This tool automatically performs the following checks:
+**🚀 Features
+  This tool automatically performs the following checks:
 
 🔐 Transport Layer (TLS) Security Checks
-
-HTTP → HTTPS redirect enforcement
-
-HTTPS response analysis
-
-TLS certificate validation (expiry, CN/SAN, chain errors)
-
-HSTS (Strict-Transport-Security) detection
+    HTTP → HTTPS redirect enforcement
+    HTTPS response analysis
+    TLS certificate validation (expiry, CN/SAN, chain errors)
+    HSTS (Strict-Transport-Security) detection
 
 🍪 Cookie & Header Security Checks
-
-Secure flag
-
-HttpOnly flag
-
-SameSite flag
-
-Cache-Control for sensitive pages
+    Secure flag
+    HttpOnly flag
+    SameSite flag
+    Cache-Control for sensitive pages
 
 🌐 Mixed Content Detection
-
-Detect insecure http:// assets loaded on an HTTPS page
-
-Prevent downgrade attacks
+    Detect insecure http:// assets loaded on an HTTPS page
+    Prevent downgrade attacks
 
 🔑 Token / Secret Leakage Detection
-
-Heuristically scans HTML for:
-
-JWT tokens
-
-API keys
-
-Session tokens
-
-Bearer tokens
-
-Hardcoded secrets
+    Heuristically scans HTML for:
+    JWT tokens
+    API keys
+    Session tokens
+    Bearer tokens
+    Hardcoded secrets
 
 🧩 Generic & Universal
-
-Works for any web interface
-
-No app code access required
-
-No dependency on technology stack
-
+    Works for any web interface
+    No app code access required
+    No dependency on technology stack
+-------------------------------------------------------------------------------------------------------------
 📥 Installation
-
 Ensure you have Python 3.7+ installed.
-
 Install dependencies:
 pip install requests beautifulsoup4
 
@@ -72,14 +50,11 @@ git clone https://github.com/<your-username>/<your-repo-name>.git
 cd <your-repo-name>
 
 ▶️ Usage
-
 Run the script:
-
 python3 a02_crypto_test.py
 
 
 When prompted:
-
 Enter target domain or full URL: https://your-sok-or-webapp.com
 
 
@@ -135,8 +110,8 @@ Token leakage	✔	Source code audit
 Cache-control	✔	—
 MITM resistance	—	Browser / proxy testing
 TLS pinning	—	Mobile/embedded clients
+----------------------------------------------------------------------------------------------------------------------------------
 ⚠️ Disclaimer
-
 This tool is intended for authorized security testing ONLY.
 Do NOT run against any target without explicit written permission.
 
