@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
 AUTOMATED OWASP A02 – CRYPTOGRAPHIC FAILURE TESTER
-Generic script usable for SOK, CMS, OMS, or any web interface.
 It AUTOMATICALLY asks the tester for the target domain/URL.
 """
 
@@ -13,7 +12,7 @@ from bs4 import BeautifulSoup
 urllib3.disable_warnings()
 
 # ------------------------- USER INPUT --------------------------
-TARGET = input("Enter target domain or full URL (e.g., https://kiosk.example.com): ").strip()
+TARGET = input("Enter target domain or full URL (e.g., https://example.com): ").strip()
 
 if not TARGET.startswith("http://") and not TARGET.startswith("https://"):
     TARGET = "https://" + TARGET
