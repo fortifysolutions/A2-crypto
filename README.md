@@ -1,11 +1,5 @@
 📌 A02 Cryptographic Failure Automated Tester
 
-A generic & user-interactive automation tool that performs OWASP Top 10 – A02: Cryptographic Failures checks for ANY web interface:
-✔ SOK (Self-Order Kiosk)
-✔ CMS (Content Management System)
-✔ OMS (Order Management System)
-✔ Generic Web Apps & APIs
-
 The script asks the user for the target domain or full URL and automatically performs a comprehensive set of security tests related to transport-layer security, cookies, headers, mixed-content, token leakages, and more.
 
 **🚀 Features
